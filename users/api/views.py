@@ -4,6 +4,8 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from users.api.serializers import UserRegisterSerializer,UserSerializer,UserUpdateSerializer
+
+
 class RegisterView(APIView):
     def post(self,request):
         serializer=UserRegisterSerializer(data=request.data)
