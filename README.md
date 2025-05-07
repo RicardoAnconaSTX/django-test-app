@@ -21,3 +21,6 @@ make fix
 ## API Documentation
 Once the app is running, access the Swagger UI at:
 http://0.0.0.0:8000/docs
+
+## Unit Tests
+docker exec -it blog_app  pytest
